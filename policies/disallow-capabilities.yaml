@@ -1,0 +1,21 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-capabilities
+spec:
+  validationFailureAction: Audit
+  rules:
+    - name: disallow-capabilities
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+      validate:
+        message: "Any capabilities are disallowed"
+        pattern:
+          spec:
+            containers:
+              - capabilities:
+                  drop:
+                    - ALL
