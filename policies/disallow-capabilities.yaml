@@ -16,6 +16,7 @@ spec:
         pattern:
           spec:
             containers:
-              - capabilities:
+            - securityContext:
+                capabilities:
                   drop:
                     - ALL
