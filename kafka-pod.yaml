@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: kafka
+  name: kafka
+  namespace: default
+spec:
+  containers:
+    - image: apache/kafka
+      name: kafka
+      resources: {}
