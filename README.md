@@ -3,6 +3,10 @@
 
 #### В качестве полигона для тестирования используем ресурс [playground-kyverno](https://playground.kyverno.io).
 <br/>
+<br/>
+#### Положительным результатом работы будет являться скриншот со всеми пройденными проверками (Status: Pass для каждой из политик)
+<br/>
+<br/>
 <img width="1677" alt="1" src="https://github.com/user-attachments/assets/20702b90-02d4-41d6-a6f7-3eba0d915c87">
 <br/>
 <br/>
